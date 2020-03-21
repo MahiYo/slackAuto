@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="53" passed="53">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="27940" started-at="2020-03-21T13:39:51Z" finished-at="2020-03-21T13:40:19Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="27940" started-at="2020-03-21T13:39:51Z" finished-at="2020-03-21T13:40:19Z">
+      <class name="testcases.AddNewChannel">
+        <test-method status="PASS" signature="addNewChannelSuccessfully()[pri:0, instance:testcases.AddNewChannel@1810399e]" name="addNewChannelSuccessfully" duration-ms="2474" started-at="2020-03-21T19:09:51Z" finished-at="2020-03-21T19:09:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewChannelSuccessfully -->
+        <test-method status="PASS" signature="addNewChannelWithAlreadyRegisteredName()[pri:0, instance:testcases.AddNewChannel@1810399e]" name="addNewChannelWithAlreadyRegisteredName" duration-ms="1618" started-at="2020-03-21T19:09:53Z" finished-at="2020-03-21T19:09:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewChannelWithAlreadyRegisteredName -->
+        <test-method status="PASS" signature="addNewChannelWithBlankName()[pri:0, instance:testcases.AddNewChannel@1810399e]" name="addNewChannelWithBlankName" duration-ms="342" started-at="2020-03-21T19:09:55Z" finished-at="2020-03-21T19:09:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewChannelWithBlankName -->
+        <test-method status="PASS" signature="addNewChannelWithBlankToken()[pri:0, instance:testcases.AddNewChannel@1810399e]" name="addNewChannelWithBlankToken" duration-ms="326" started-at="2020-03-21T19:09:55Z" finished-at="2020-03-21T19:09:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewChannelWithBlankToken -->
+        <test-method status="PASS" signature="addNewChannelWithInvalidToken()[pri:0, instance:testcases.AddNewChannel@1810399e]" name="addNewChannelWithInvalidToken" duration-ms="372" started-at="2020-03-21T19:09:56Z" finished-at="2020-03-21T19:09:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewChannelWithInvalidToken -->
+        <test-method status="PASS" signature="addNewChannelWithNameCombinationUpperLowerCase()[pri:0, instance:testcases.AddNewChannel@1810399e]" name="addNewChannelWithNameCombinationUpperLowerCase" duration-ms="322" started-at="2020-03-21T19:09:56Z" finished-at="2020-03-21T19:09:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewChannelWithNameCombinationUpperLowerCase -->
+        <test-method status="PASS" signature="addNewChannelWithNameEqualTo80()[pri:0, instance:testcases.AddNewChannel@1810399e]" name="addNewChannelWithNameEqualTo80" duration-ms="1203" started-at="2020-03-21T19:09:56Z" finished-at="2020-03-21T19:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewChannelWithNameEqualTo80 -->
+        <test-method status="PASS" signature="addNewChannelWithNameInUpperCase()[pri:0, instance:testcases.AddNewChannel@1810399e]" name="addNewChannelWithNameInUpperCase" duration-ms="318" started-at="2020-03-21T19:09:58Z" finished-at="2020-03-21T19:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewChannelWithNameInUpperCase -->
+        <test-method status="PASS" signature="addNewChannelWithNameMoreThan80()[pri:0, instance:testcases.AddNewChannel@1810399e]" name="addNewChannelWithNameMoreThan80" duration-ms="692" started-at="2020-03-21T19:09:58Z" finished-at="2020-03-21T19:09:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewChannelWithNameMoreThan80 -->
+        <test-method status="PASS" signature="addNewChannelWithNullValueName()[pri:0, instance:testcases.AddNewChannel@1810399e]" name="addNewChannelWithNullValueName" duration-ms="415" started-at="2020-03-21T19:09:59Z" finished-at="2020-03-21T19:09:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewChannelWithNullValueName -->
+        <test-method status="PASS" signature="addNewChannelWithNullValueToken()[pri:0, instance:testcases.AddNewChannel@1810399e]" name="addNewChannelWithNullValueToken" duration-ms="343" started-at="2020-03-21T19:09:59Z" finished-at="2020-03-21T19:09:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewChannelWithNullValueToken -->
+        <test-method status="PASS" signature="addNewChannelWithSpecialCharacterName()[pri:0, instance:testcases.AddNewChannel@1810399e]" name="addNewChannelWithSpecialCharacterName" duration-ms="366" started-at="2020-03-21T19:09:59Z" finished-at="2020-03-21T19:10:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewChannelWithSpecialCharacterName -->
+        <test-method status="PASS" signature="addNewChannelWithoutName()[pri:0, instance:testcases.AddNewChannel@1810399e]" name="addNewChannelWithoutName" duration-ms="346" started-at="2020-03-21T19:10:00Z" finished-at="2020-03-21T19:10:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewChannelWithoutName -->
+        <test-method status="PASS" signature="addNewChannelWithoutToken()[pri:0, instance:testcases.AddNewChannel@1810399e]" name="addNewChannelWithoutToken" duration-ms="321" started-at="2020-03-21T19:10:00Z" finished-at="2020-03-21T19:10:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewChannelWithoutToken -->
+      </class> <!-- testcases.AddNewChannel -->
+      <class name="testcases.RenameChannel">
+        <test-method status="PASS" signature="createChannel()[pri:0, instance:testcases.RenameChannel@4439f31e]" name="createChannel" is-config="true" duration-ms="854" started-at="2020-03-21T19:10:10Z" finished-at="2020-03-21T19:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createChannel -->
+        <test-method status="PASS" signature="renameChannelInvalidIntValueChannelId()[pri:0, instance:testcases.RenameChannel@4439f31e]" name="renameChannelInvalidIntValueChannelId" duration-ms="342" started-at="2020-03-21T19:10:11Z" finished-at="2020-03-21T19:10:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelInvalidIntValueChannelId -->
+        <test-method status="PASS" signature="renameChannelInvalidStringValueChannelId()[pri:0, instance:testcases.RenameChannel@4439f31e]" name="renameChannelInvalidStringValueChannelId" duration-ms="343" started-at="2020-03-21T19:10:12Z" finished-at="2020-03-21T19:10:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelInvalidStringValueChannelId -->
+        <test-method status="PASS" signature="renameChannelWithBlankChannelId()[pri:0, instance:testcases.RenameChannel@4439f31e]" name="renameChannelWithBlankChannelId" duration-ms="424" started-at="2020-03-21T19:10:12Z" finished-at="2020-03-21T19:10:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelWithBlankChannelId -->
+        <test-method status="PASS" signature="renameChannelWithNullValueChannelId()[pri:0, instance:testcases.RenameChannel@4439f31e]" name="renameChannelWithNullValueChannelId" duration-ms="408" started-at="2020-03-21T19:10:12Z" finished-at="2020-03-21T19:10:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelWithNullValueChannelId -->
+        <test-method status="PASS" signature="renameChannelWithoutChannelId()[pri:0, instance:testcases.RenameChannel@4439f31e]" name="renameChannelWithoutChannelId" duration-ms="306" started-at="2020-03-21T19:10:13Z" finished-at="2020-03-21T19:10:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelWithoutChannelId -->
+        <test-method status="PASS" signature="renameChannelWithTheOriginalChannelName()[pri:1, instance:testcases.RenameChannel@4439f31e]" name="renameChannelWithTheOriginalChannelName" duration-ms="410" started-at="2020-03-21T19:10:13Z" finished-at="2020-03-21T19:10:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelWithTheOriginalChannelName -->
+        <test-method status="PASS" signature="renameChannelSuccessfully()[pri:2, instance:testcases.RenameChannel@4439f31e]" name="renameChannelSuccessfully" duration-ms="735" started-at="2020-03-21T19:10:13Z" finished-at="2020-03-21T19:10:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelSuccessfully -->
+        <test-method status="PASS" signature="renameChannelWithBlankToken()[pri:3, instance:testcases.RenameChannel@4439f31e]" name="renameChannelWithBlankToken" duration-ms="320" started-at="2020-03-21T19:10:14Z" finished-at="2020-03-21T19:10:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelWithBlankToken -->
+        <test-method status="PASS" signature="renameChannelWithInvalidToken()[pri:4, instance:testcases.RenameChannel@4439f31e]" name="renameChannelWithInvalidToken" duration-ms="316" started-at="2020-03-21T19:10:14Z" finished-at="2020-03-21T19:10:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelWithInvalidToken -->
+        <test-method status="PASS" signature="renameChannelWithNullValueToken()[pri:5, instance:testcases.RenameChannel@4439f31e]" name="renameChannelWithNullValueToken" duration-ms="305" started-at="2020-03-21T19:10:15Z" finished-at="2020-03-21T19:10:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelWithNullValueToken -->
+        <test-method status="PASS" signature="renameChannelWithoutToken()[pri:6, instance:testcases.RenameChannel@4439f31e]" name="renameChannelWithoutToken" duration-ms="312" started-at="2020-03-21T19:10:15Z" finished-at="2020-03-21T19:10:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelWithoutToken -->
+        <test-method status="PASS" signature="renameChannelWithBlankRename()[pri:7, instance:testcases.RenameChannel@4439f31e]" name="renameChannelWithBlankRename" duration-ms="316" started-at="2020-03-21T19:10:15Z" finished-at="2020-03-21T19:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelWithBlankRename -->
+        <test-method status="PASS" signature="renameChannelSpecialCharacterInRename()[pri:8, instance:testcases.RenameChannel@4439f31e]" name="renameChannelSpecialCharacterInRename" duration-ms="317" started-at="2020-03-21T19:10:16Z" finished-at="2020-03-21T19:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelSpecialCharacterInRename -->
+        <test-method status="PASS" signature="renameChannelWithNulValueInRename()[pri:9, instance:testcases.RenameChannel@4439f31e]" name="renameChannelWithNulValueInRename" duration-ms="561" started-at="2020-03-21T19:10:16Z" finished-at="2020-03-21T19:10:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelWithNulValueInRename -->
+        <test-method status="PASS" signature="renameChannelWithoutRename()[pri:10, instance:testcases.RenameChannel@4439f31e]" name="renameChannelWithoutRename" duration-ms="354" started-at="2020-03-21T19:10:17Z" finished-at="2020-03-21T19:10:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelWithoutRename -->
+        <test-method status="PASS" signature="renameChannelWithUpperCaseInRename()[pri:11, instance:testcases.RenameChannel@4439f31e]" name="renameChannelWithUpperCaseInRename" duration-ms="323" started-at="2020-03-21T19:10:17Z" finished-at="2020-03-21T19:10:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelWithUpperCaseInRename -->
+        <test-method status="PASS" signature="renameChannelWithUpperAndLowerCaseInRename()[pri:12, instance:testcases.RenameChannel@4439f31e]" name="renameChannelWithUpperAndLowerCaseInRename" duration-ms="336" started-at="2020-03-21T19:10:17Z" finished-at="2020-03-21T19:10:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelWithUpperAndLowerCaseInRename -->
+        <test-method status="PASS" signature="renameChannelWithRenameMoreThan80()[pri:13, instance:testcases.RenameChannel@4439f31e]" name="renameChannelWithRenameMoreThan80" duration-ms="374" started-at="2020-03-21T19:10:18Z" finished-at="2020-03-21T19:10:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelWithRenameMoreThan80 -->
+        <test-method status="PASS" signature="renameChannelWithRenameEqualTo80()[pri:14, instance:testcases.RenameChannel@4439f31e]" name="renameChannelWithRenameEqualTo80" duration-ms="401" started-at="2020-03-21T19:10:18Z" finished-at="2020-03-21T19:10:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renameChannelWithRenameEqualTo80 -->
+        <test-method status="PASS" signature="deleteChannel()[pri:0, instance:testcases.RenameChannel@4439f31e]" name="deleteChannel" is-config="true" duration-ms="396" started-at="2020-03-21T19:10:18Z" finished-at="2020-03-21T19:10:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteChannel -->
+      </class> <!-- testcases.RenameChannel -->
+      <class name="testcases.ArchiveChannel">
+        <test-method status="PASS" signature="createChannel()[pri:0, instance:testcases.ArchiveChannel@32d992b2]" name="createChannel" is-config="true" duration-ms="864" started-at="2020-03-21T19:10:00Z" finished-at="2020-03-21T19:10:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createChannel -->
+        <test-method status="PASS" signature="archieveChannelInvalidIntValueChannelId()[pri:0, instance:testcases.ArchiveChannel@32d992b2]" name="archieveChannelInvalidIntValueChannelId" duration-ms="333" started-at="2020-03-21T19:10:01Z" finished-at="2020-03-21T19:10:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- archieveChannelInvalidIntValueChannelId -->
+        <test-method status="PASS" signature="archieveChannelInvalidStringChannelId()[pri:0, instance:testcases.ArchiveChannel@32d992b2]" name="archieveChannelInvalidStringChannelId" duration-ms="406" started-at="2020-03-21T19:10:02Z" finished-at="2020-03-21T19:10:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- archieveChannelInvalidStringChannelId -->
+        <test-method status="PASS" signature="archieveChannelWithBlankChannelId()[pri:0, instance:testcases.ArchiveChannel@32d992b2]" name="archieveChannelWithBlankChannelId" duration-ms="338" started-at="2020-03-21T19:10:02Z" finished-at="2020-03-21T19:10:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- archieveChannelWithBlankChannelId -->
+        <test-method status="PASS" signature="archieveChannelWithNullValueChannelId()[pri:0, instance:testcases.ArchiveChannel@32d992b2]" name="archieveChannelWithNullValueChannelId" duration-ms="321" started-at="2020-03-21T19:10:02Z" finished-at="2020-03-21T19:10:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- archieveChannelWithNullValueChannelId -->
+        <test-method status="PASS" signature="archieveChannelWithBlankToken()[pri:1, instance:testcases.ArchiveChannel@32d992b2]" name="archieveChannelWithBlankToken" duration-ms="335" started-at="2020-03-21T19:10:03Z" finished-at="2020-03-21T19:10:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- archieveChannelWithBlankToken -->
+        <test-method status="PASS" signature="archieveChannelWithInvalidToken()[pri:2, instance:testcases.ArchiveChannel@32d992b2]" name="archieveChannelWithInvalidToken" duration-ms="327" started-at="2020-03-21T19:10:03Z" finished-at="2020-03-21T19:10:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- archieveChannelWithInvalidToken -->
+        <test-method status="PASS" signature="archieveChannelWithNullValueToken()[pri:3, instance:testcases.ArchiveChannel@32d992b2]" name="archieveChannelWithNullValueToken" duration-ms="326" started-at="2020-03-21T19:10:03Z" finished-at="2020-03-21T19:10:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- archieveChannelWithNullValueToken -->
+        <test-method status="PASS" signature="archieveChannelWithoutToken()[pri:4, instance:testcases.ArchiveChannel@32d992b2]" name="archieveChannelWithoutToken" duration-ms="325" started-at="2020-03-21T19:10:04Z" finished-at="2020-03-21T19:10:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- archieveChannelWithoutToken -->
+        <test-method status="PASS" signature="archieveChannelSuccessfully()[pri:5, instance:testcases.ArchiveChannel@32d992b2]" name="archieveChannelSuccessfully" duration-ms="752" started-at="2020-03-21T19:10:04Z" finished-at="2020-03-21T19:10:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- archieveChannelSuccessfully -->
+        <test-method status="PASS" signature="archieveChannelWithAlreadyarchieve()[pri:6, instance:testcases.ArchiveChannel@32d992b2]" name="archieveChannelWithAlreadyarchieve" duration-ms="313" started-at="2020-03-21T19:10:05Z" finished-at="2020-03-21T19:10:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- archieveChannelWithAlreadyarchieve -->
+      </class> <!-- testcases.ArchiveChannel -->
+      <class name="testcases.JoinChannel">
+        <test-method status="PASS" signature="joinChannelInvalidIntValueChannelId()[pri:0, instance:testcases.JoinChannel@215be6bb]" name="joinChannelInvalidIntValueChannelId" duration-ms="334" started-at="2020-03-21T19:10:05Z" finished-at="2020-03-21T19:10:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- joinChannelInvalidIntValueChannelId -->
+        <test-method status="PASS" signature="joinChannelInvalidStringChannelId()[pri:0, instance:testcases.JoinChannel@215be6bb]" name="joinChannelInvalidStringChannelId" duration-ms="995" started-at="2020-03-21T19:10:05Z" finished-at="2020-03-21T19:10:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- joinChannelInvalidStringChannelId -->
+        <test-method status="PASS" signature="joinChannelWithBlankChannelId()[pri:0, instance:testcases.JoinChannel@215be6bb]" name="joinChannelWithBlankChannelId" duration-ms="316" started-at="2020-03-21T19:10:06Z" finished-at="2020-03-21T19:10:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- joinChannelWithBlankChannelId -->
+        <test-method status="PASS" signature="joinChannelWithNullValueChannelId()[pri:0, instance:testcases.JoinChannel@215be6bb]" name="joinChannelWithNullValueChannelId" duration-ms="334" started-at="2020-03-21T19:10:07Z" finished-at="2020-03-21T19:10:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- joinChannelWithNullValueChannelId -->
+        <test-method status="PASS" signature="joinChannelWithoutChannelId()[pri:0, instance:testcases.JoinChannel@215be6bb]" name="joinChannelWithoutChannelId" duration-ms="364" started-at="2020-03-21T19:10:07Z" finished-at="2020-03-21T19:10:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- joinChannelWithoutChannelId -->
+        <test-method status="PASS" signature="joinChannelSuccessfully()[pri:1, instance:testcases.JoinChannel@215be6bb]" name="joinChannelSuccessfully" duration-ms="1158" started-at="2020-03-21T19:10:07Z" finished-at="2020-03-21T19:10:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- joinChannelSuccessfully -->
+        <test-method status="PASS" signature="joinChannelWithBlankToken()[pri:2, instance:testcases.JoinChannel@215be6bb]" name="joinChannelWithBlankToken" duration-ms="374" started-at="2020-03-21T19:10:09Z" finished-at="2020-03-21T19:10:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- joinChannelWithBlankToken -->
+        <test-method status="PASS" signature="joinChannelWithInvalidToken()[pri:3, instance:testcases.JoinChannel@215be6bb]" name="joinChannelWithInvalidToken" duration-ms="329" started-at="2020-03-21T19:10:09Z" finished-at="2020-03-21T19:10:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- joinChannelWithInvalidToken -->
+        <test-method status="PASS" signature="joinChannelWithNullValueToken()[pri:4, instance:testcases.JoinChannel@215be6bb]" name="joinChannelWithNullValueToken" duration-ms="307" started-at="2020-03-21T19:10:09Z" finished-at="2020-03-21T19:10:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- joinChannelWithNullValueToken -->
+        <test-method status="PASS" signature="joinChannelWithoutToken()[pri:5, instance:testcases.JoinChannel@215be6bb]" name="joinChannelWithoutToken" duration-ms="771" started-at="2020-03-21T19:10:10Z" finished-at="2020-03-21T19:10:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- joinChannelWithoutToken -->
+      </class> <!-- testcases.JoinChannel -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

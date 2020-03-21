@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>testcases.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">53 methods,   53 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AddNewChannel" hash-for-method="addNewChannelSuccessfully">addNewChannelSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AddNewChannel" hash-for-method="addNewChannelWithAlreadyRegisteredName">addNewChannelWithAlreadyRegisteredName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AddNewChannel" hash-for-method="addNewChannelWithBlankName">addNewChannelWithBlankName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AddNewChannel" hash-for-method="addNewChannelWithBlankToken">addNewChannelWithBlankToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AddNewChannel" hash-for-method="addNewChannelWithInvalidToken">addNewChannelWithInvalidToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AddNewChannel" hash-for-method="addNewChannelWithNameCombinationUpperLowerCase">addNewChannelWithNameCombinationUpperLowerCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AddNewChannel" hash-for-method="addNewChannelWithNameEqualTo80">addNewChannelWithNameEqualTo80</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AddNewChannel" hash-for-method="addNewChannelWithNameInUpperCase">addNewChannelWithNameInUpperCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AddNewChannel" hash-for-method="addNewChannelWithNameMoreThan80">addNewChannelWithNameMoreThan80</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AddNewChannel" hash-for-method="addNewChannelWithNullValueName">addNewChannelWithNullValueName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AddNewChannel" hash-for-method="addNewChannelWithNullValueToken">addNewChannelWithNullValueToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AddNewChannel" hash-for-method="addNewChannelWithSpecialCharacterName">addNewChannelWithSpecialCharacterName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AddNewChannel" hash-for-method="addNewChannelWithoutName">addNewChannelWithoutName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AddNewChannel" hash-for-method="addNewChannelWithoutToken">addNewChannelWithoutToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.ArchiveChannel" hash-for-method="archieveChannelInvalidIntValueChannelId">archieveChannelInvalidIntValueChannelId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.ArchiveChannel" hash-for-method="archieveChannelInvalidStringChannelId">archieveChannelInvalidStringChannelId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.ArchiveChannel" hash-for-method="archieveChannelSuccessfully">archieveChannelSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.ArchiveChannel" hash-for-method="archieveChannelWithAlreadyarchieve">archieveChannelWithAlreadyarchieve</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.ArchiveChannel" hash-for-method="archieveChannelWithBlankChannelId">archieveChannelWithBlankChannelId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.ArchiveChannel" hash-for-method="archieveChannelWithBlankToken">archieveChannelWithBlankToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.ArchiveChannel" hash-for-method="archieveChannelWithInvalidToken">archieveChannelWithInvalidToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.ArchiveChannel" hash-for-method="archieveChannelWithNullValueChannelId">archieveChannelWithNullValueChannelId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.ArchiveChannel" hash-for-method="archieveChannelWithNullValueToken">archieveChannelWithNullValueToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.ArchiveChannel" hash-for-method="archieveChannelWithoutToken">archieveChannelWithoutToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.JoinChannel" hash-for-method="joinChannelInvalidIntValueChannelId">joinChannelInvalidIntValueChannelId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.JoinChannel" hash-for-method="joinChannelInvalidStringChannelId">joinChannelInvalidStringChannelId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.JoinChannel" hash-for-method="joinChannelSuccessfully">joinChannelSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.JoinChannel" hash-for-method="joinChannelWithBlankChannelId">joinChannelWithBlankChannelId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.JoinChannel" hash-for-method="joinChannelWithBlankToken">joinChannelWithBlankToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.JoinChannel" hash-for-method="joinChannelWithInvalidToken">joinChannelWithInvalidToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.JoinChannel" hash-for-method="joinChannelWithNullValueChannelId">joinChannelWithNullValueChannelId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.JoinChannel" hash-for-method="joinChannelWithNullValueToken">joinChannelWithNullValueToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.JoinChannel" hash-for-method="joinChannelWithoutChannelId">joinChannelWithoutChannelId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.JoinChannel" hash-for-method="joinChannelWithoutToken">joinChannelWithoutToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelInvalidIntValueChannelId">renameChannelInvalidIntValueChannelId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelInvalidStringValueChannelId">renameChannelInvalidStringValueChannelId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelSpecialCharacterInRename">renameChannelSpecialCharacterInRename</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelSuccessfully">renameChannelSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelWithBlankChannelId">renameChannelWithBlankChannelId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelWithBlankRename">renameChannelWithBlankRename</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelWithBlankToken">renameChannelWithBlankToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelWithInvalidToken">renameChannelWithInvalidToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelWithNulValueInRename">renameChannelWithNulValueInRename</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelWithNullValueChannelId">renameChannelWithNullValueChannelId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelWithNullValueToken">renameChannelWithNullValueToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelWithRenameEqualTo80">renameChannelWithRenameEqualTo80</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelWithRenameMoreThan80">renameChannelWithRenameMoreThan80</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelWithTheOriginalChannelName">renameChannelWithTheOriginalChannelName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelWithUpperAndLowerCaseInRename">renameChannelWithUpperAndLowerCaseInRename</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelWithUpperCaseInRename">renameChannelWithUpperCaseInRename</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelWithoutChannelId">renameChannelWithoutChannelId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelWithoutRename">renameChannelWithoutRename</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.RenameChannel" hash-for-method="renameChannelWithoutToken">renameChannelWithoutToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.ArchiveChannel</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="archieveChannelInvalidIntValueChannelId">
+                  </a> <!-- archieveChannelInvalidIntValueChannelId -->
+                  <span class="method-name">archieveChannelInvalidIntValueChannelId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="archieveChannelInvalidStringChannelId">
+                  </a> <!-- archieveChannelInvalidStringChannelId -->
+                  <span class="method-name">archieveChannelInvalidStringChannelId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="archieveChannelSuccessfully">
+                  </a> <!-- archieveChannelSuccessfully -->
+                  <span class="method-name">archieveChannelSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="archieveChannelWithAlreadyarchieve">
+                  </a> <!-- archieveChannelWithAlreadyarchieve -->
+                  <span class="method-name">archieveChannelWithAlreadyarchieve</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="archieveChannelWithBlankChannelId">
+                  </a> <!-- archieveChannelWithBlankChannelId -->
+                  <span class="method-name">archieveChannelWithBlankChannelId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="archieveChannelWithBlankToken">
+                  </a> <!-- archieveChannelWithBlankToken -->
+                  <span class="method-name">archieveChannelWithBlankToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="archieveChannelWithInvalidToken">
+                  </a> <!-- archieveChannelWithInvalidToken -->
+                  <span class="method-name">archieveChannelWithInvalidToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="archieveChannelWithNullValueChannelId">
+                  </a> <!-- archieveChannelWithNullValueChannelId -->
+                  <span class="method-name">archieveChannelWithNullValueChannelId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="archieveChannelWithNullValueToken">
+                  </a> <!-- archieveChannelWithNullValueToken -->
+                  <span class="method-name">archieveChannelWithNullValueToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="archieveChannelWithoutToken">
+                  </a> <!-- archieveChannelWithoutToken -->
+                  <span class="method-name">archieveChannelWithoutToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.JoinChannel</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="joinChannelInvalidIntValueChannelId">
+                  </a> <!-- joinChannelInvalidIntValueChannelId -->
+                  <span class="method-name">joinChannelInvalidIntValueChannelId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="joinChannelInvalidStringChannelId">
+                  </a> <!-- joinChannelInvalidStringChannelId -->
+                  <span class="method-name">joinChannelInvalidStringChannelId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="joinChannelSuccessfully">
+                  </a> <!-- joinChannelSuccessfully -->
+                  <span class="method-name">joinChannelSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="joinChannelWithBlankChannelId">
+                  </a> <!-- joinChannelWithBlankChannelId -->
+                  <span class="method-name">joinChannelWithBlankChannelId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="joinChannelWithBlankToken">
+                  </a> <!-- joinChannelWithBlankToken -->
+                  <span class="method-name">joinChannelWithBlankToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="joinChannelWithInvalidToken">
+                  </a> <!-- joinChannelWithInvalidToken -->
+                  <span class="method-name">joinChannelWithInvalidToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="joinChannelWithNullValueChannelId">
+                  </a> <!-- joinChannelWithNullValueChannelId -->
+                  <span class="method-name">joinChannelWithNullValueChannelId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="joinChannelWithNullValueToken">
+                  </a> <!-- joinChannelWithNullValueToken -->
+                  <span class="method-name">joinChannelWithNullValueToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="joinChannelWithoutChannelId">
+                  </a> <!-- joinChannelWithoutChannelId -->
+                  <span class="method-name">joinChannelWithoutChannelId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="joinChannelWithoutToken">
+                  </a> <!-- joinChannelWithoutToken -->
+                  <span class="method-name">joinChannelWithoutToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.AddNewChannel</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewChannelSuccessfully">
+                  </a> <!-- addNewChannelSuccessfully -->
+                  <span class="method-name">addNewChannelSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewChannelWithAlreadyRegisteredName">
+                  </a> <!-- addNewChannelWithAlreadyRegisteredName -->
+                  <span class="method-name">addNewChannelWithAlreadyRegisteredName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewChannelWithBlankName">
+                  </a> <!-- addNewChannelWithBlankName -->
+                  <span class="method-name">addNewChannelWithBlankName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewChannelWithBlankToken">
+                  </a> <!-- addNewChannelWithBlankToken -->
+                  <span class="method-name">addNewChannelWithBlankToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewChannelWithInvalidToken">
+                  </a> <!-- addNewChannelWithInvalidToken -->
+                  <span class="method-name">addNewChannelWithInvalidToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewChannelWithNameCombinationUpperLowerCase">
+                  </a> <!-- addNewChannelWithNameCombinationUpperLowerCase -->
+                  <span class="method-name">addNewChannelWithNameCombinationUpperLowerCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewChannelWithNameEqualTo80">
+                  </a> <!-- addNewChannelWithNameEqualTo80 -->
+                  <span class="method-name">addNewChannelWithNameEqualTo80</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewChannelWithNameInUpperCase">
+                  </a> <!-- addNewChannelWithNameInUpperCase -->
+                  <span class="method-name">addNewChannelWithNameInUpperCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewChannelWithNameMoreThan80">
+                  </a> <!-- addNewChannelWithNameMoreThan80 -->
+                  <span class="method-name">addNewChannelWithNameMoreThan80</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewChannelWithNullValueName">
+                  </a> <!-- addNewChannelWithNullValueName -->
+                  <span class="method-name">addNewChannelWithNullValueName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewChannelWithNullValueToken">
+                  </a> <!-- addNewChannelWithNullValueToken -->
+                  <span class="method-name">addNewChannelWithNullValueToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewChannelWithSpecialCharacterName">
+                  </a> <!-- addNewChannelWithSpecialCharacterName -->
+                  <span class="method-name">addNewChannelWithSpecialCharacterName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewChannelWithoutName">
+                  </a> <!-- addNewChannelWithoutName -->
+                  <span class="method-name">addNewChannelWithoutName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewChannelWithoutToken">
+                  </a> <!-- addNewChannelWithoutToken -->
+                  <span class="method-name">addNewChannelWithoutToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.RenameChannel</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelInvalidIntValueChannelId">
+                  </a> <!-- renameChannelInvalidIntValueChannelId -->
+                  <span class="method-name">renameChannelInvalidIntValueChannelId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelInvalidStringValueChannelId">
+                  </a> <!-- renameChannelInvalidStringValueChannelId -->
+                  <span class="method-name">renameChannelInvalidStringValueChannelId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelSpecialCharacterInRename">
+                  </a> <!-- renameChannelSpecialCharacterInRename -->
+                  <span class="method-name">renameChannelSpecialCharacterInRename</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelSuccessfully">
+                  </a> <!-- renameChannelSuccessfully -->
+                  <span class="method-name">renameChannelSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelWithBlankChannelId">
+                  </a> <!-- renameChannelWithBlankChannelId -->
+                  <span class="method-name">renameChannelWithBlankChannelId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelWithBlankRename">
+                  </a> <!-- renameChannelWithBlankRename -->
+                  <span class="method-name">renameChannelWithBlankRename</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelWithBlankToken">
+                  </a> <!-- renameChannelWithBlankToken -->
+                  <span class="method-name">renameChannelWithBlankToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelWithInvalidToken">
+                  </a> <!-- renameChannelWithInvalidToken -->
+                  <span class="method-name">renameChannelWithInvalidToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelWithNulValueInRename">
+                  </a> <!-- renameChannelWithNulValueInRename -->
+                  <span class="method-name">renameChannelWithNulValueInRename</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelWithNullValueChannelId">
+                  </a> <!-- renameChannelWithNullValueChannelId -->
+                  <span class="method-name">renameChannelWithNullValueChannelId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelWithNullValueToken">
+                  </a> <!-- renameChannelWithNullValueToken -->
+                  <span class="method-name">renameChannelWithNullValueToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelWithRenameEqualTo80">
+                  </a> <!-- renameChannelWithRenameEqualTo80 -->
+                  <span class="method-name">renameChannelWithRenameEqualTo80</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelWithRenameMoreThan80">
+                  </a> <!-- renameChannelWithRenameMoreThan80 -->
+                  <span class="method-name">renameChannelWithRenameMoreThan80</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelWithTheOriginalChannelName">
+                  </a> <!-- renameChannelWithTheOriginalChannelName -->
+                  <span class="method-name">renameChannelWithTheOriginalChannelName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelWithUpperAndLowerCaseInRename">
+                  </a> <!-- renameChannelWithUpperAndLowerCaseInRename -->
+                  <span class="method-name">renameChannelWithUpperAndLowerCaseInRename</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelWithUpperCaseInRename">
+                  </a> <!-- renameChannelWithUpperCaseInRename -->
+                  <span class="method-name">renameChannelWithUpperCaseInRename</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelWithoutChannelId">
+                  </a> <!-- renameChannelWithoutChannelId -->
+                  <span class="method-name">renameChannelWithoutChannelId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelWithoutRename">
+                  </a> <!-- renameChannelWithoutRename -->
+                  <span class="method-name">renameChannelWithoutRename</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renameChannelWithoutToken">
+                  </a> <!-- renameChannelWithoutToken -->
+                  <span class="method-name">renameChannelWithoutToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/MAHIMA.YADAV/Documents/Slack/testcases.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.AddNewChannel&quot;/&gt;
+      &lt;class name=&quot;testcases.ArchiveChannel&quot;/&gt;
+      &lt;class name=&quot;testcases.JoinChannel&quot;/&gt;
+      &lt;class name=&quot;testcases.RenameChannel&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(53);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addNewChannelSuccessfully')
+data.setCell(0, 2, 'testcases.AddNewChannel')
+data.setCell(0, 3, 2474);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addNewChannelWithAlreadyRegisteredName')
+data.setCell(1, 2, 'testcases.AddNewChannel')
+data.setCell(1, 3, 1618);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addNewChannelWithNameEqualTo80')
+data.setCell(2, 2, 'testcases.AddNewChannel')
+data.setCell(2, 3, 1203);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'joinChannelSuccessfully')
+data.setCell(3, 2, 'testcases.JoinChannel')
+data.setCell(3, 3, 1158);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'joinChannelInvalidStringChannelId')
+data.setCell(4, 2, 'testcases.JoinChannel')
+data.setCell(4, 3, 995);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'joinChannelWithoutToken')
+data.setCell(5, 2, 'testcases.JoinChannel')
+data.setCell(5, 3, 771);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'archieveChannelSuccessfully')
+data.setCell(6, 2, 'testcases.ArchiveChannel')
+data.setCell(6, 3, 752);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'renameChannelSuccessfully')
+data.setCell(7, 2, 'testcases.RenameChannel')
+data.setCell(7, 3, 735);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'addNewChannelWithNameMoreThan80')
+data.setCell(8, 2, 'testcases.AddNewChannel')
+data.setCell(8, 3, 692);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'renameChannelWithNulValueInRename')
+data.setCell(9, 2, 'testcases.RenameChannel')
+data.setCell(9, 3, 561);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'renameChannelWithBlankChannelId')
+data.setCell(10, 2, 'testcases.RenameChannel')
+data.setCell(10, 3, 424);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'addNewChannelWithNullValueName')
+data.setCell(11, 2, 'testcases.AddNewChannel')
+data.setCell(11, 3, 415);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'renameChannelWithTheOriginalChannelName')
+data.setCell(12, 2, 'testcases.RenameChannel')
+data.setCell(12, 3, 410);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'renameChannelWithNullValueChannelId')
+data.setCell(13, 2, 'testcases.RenameChannel')
+data.setCell(13, 3, 408);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'archieveChannelInvalidStringChannelId')
+data.setCell(14, 2, 'testcases.ArchiveChannel')
+data.setCell(14, 3, 406);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'renameChannelWithRenameEqualTo80')
+data.setCell(15, 2, 'testcases.RenameChannel')
+data.setCell(15, 3, 401);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'joinChannelWithBlankToken')
+data.setCell(16, 2, 'testcases.JoinChannel')
+data.setCell(16, 3, 374);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'renameChannelWithRenameMoreThan80')
+data.setCell(17, 2, 'testcases.RenameChannel')
+data.setCell(17, 3, 374);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'addNewChannelWithInvalidToken')
+data.setCell(18, 2, 'testcases.AddNewChannel')
+data.setCell(18, 3, 372);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'addNewChannelWithSpecialCharacterName')
+data.setCell(19, 2, 'testcases.AddNewChannel')
+data.setCell(19, 3, 366);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'joinChannelWithoutChannelId')
+data.setCell(20, 2, 'testcases.JoinChannel')
+data.setCell(20, 3, 364);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'renameChannelWithoutRename')
+data.setCell(21, 2, 'testcases.RenameChannel')
+data.setCell(21, 3, 354);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'addNewChannelWithoutName')
+data.setCell(22, 2, 'testcases.AddNewChannel')
+data.setCell(22, 3, 346);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'renameChannelInvalidStringValueChannelId')
+data.setCell(23, 2, 'testcases.RenameChannel')
+data.setCell(23, 3, 343);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'addNewChannelWithNullValueToken')
+data.setCell(24, 2, 'testcases.AddNewChannel')
+data.setCell(24, 3, 343);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'renameChannelInvalidIntValueChannelId')
+data.setCell(25, 2, 'testcases.RenameChannel')
+data.setCell(25, 3, 342);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'addNewChannelWithBlankName')
+data.setCell(26, 2, 'testcases.AddNewChannel')
+data.setCell(26, 3, 342);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'archieveChannelWithBlankChannelId')
+data.setCell(27, 2, 'testcases.ArchiveChannel')
+data.setCell(27, 3, 338);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'renameChannelWithUpperAndLowerCaseInRename')
+data.setCell(28, 2, 'testcases.RenameChannel')
+data.setCell(28, 3, 336);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'archieveChannelWithBlankToken')
+data.setCell(29, 2, 'testcases.ArchiveChannel')
+data.setCell(29, 3, 335);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'joinChannelWithNullValueChannelId')
+data.setCell(30, 2, 'testcases.JoinChannel')
+data.setCell(30, 3, 334);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'joinChannelInvalidIntValueChannelId')
+data.setCell(31, 2, 'testcases.JoinChannel')
+data.setCell(31, 3, 334);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'archieveChannelInvalidIntValueChannelId')
+data.setCell(32, 2, 'testcases.ArchiveChannel')
+data.setCell(32, 3, 333);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'joinChannelWithInvalidToken')
+data.setCell(33, 2, 'testcases.JoinChannel')
+data.setCell(33, 3, 329);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'archieveChannelWithInvalidToken')
+data.setCell(34, 2, 'testcases.ArchiveChannel')
+data.setCell(34, 3, 327);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'archieveChannelWithNullValueToken')
+data.setCell(35, 2, 'testcases.ArchiveChannel')
+data.setCell(35, 3, 326);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'addNewChannelWithBlankToken')
+data.setCell(36, 2, 'testcases.AddNewChannel')
+data.setCell(36, 3, 326);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'archieveChannelWithoutToken')
+data.setCell(37, 2, 'testcases.ArchiveChannel')
+data.setCell(37, 3, 325);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'renameChannelWithUpperCaseInRename')
+data.setCell(38, 2, 'testcases.RenameChannel')
+data.setCell(38, 3, 323);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'addNewChannelWithNameCombinationUpperLowerCase')
+data.setCell(39, 2, 'testcases.AddNewChannel')
+data.setCell(39, 3, 322);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'archieveChannelWithNullValueChannelId')
+data.setCell(40, 2, 'testcases.ArchiveChannel')
+data.setCell(40, 3, 321);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'addNewChannelWithoutToken')
+data.setCell(41, 2, 'testcases.AddNewChannel')
+data.setCell(41, 3, 321);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'renameChannelWithBlankToken')
+data.setCell(42, 2, 'testcases.RenameChannel')
+data.setCell(42, 3, 320);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'addNewChannelWithNameInUpperCase')
+data.setCell(43, 2, 'testcases.AddNewChannel')
+data.setCell(43, 3, 318);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'renameChannelSpecialCharacterInRename')
+data.setCell(44, 2, 'testcases.RenameChannel')
+data.setCell(44, 3, 317);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'renameChannelWithBlankRename')
+data.setCell(45, 2, 'testcases.RenameChannel')
+data.setCell(45, 3, 316);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'joinChannelWithBlankChannelId')
+data.setCell(46, 2, 'testcases.JoinChannel')
+data.setCell(46, 3, 316);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'renameChannelWithInvalidToken')
+data.setCell(47, 2, 'testcases.RenameChannel')
+data.setCell(47, 3, 316);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'archieveChannelWithAlreadyarchieve')
+data.setCell(48, 2, 'testcases.ArchiveChannel')
+data.setCell(48, 3, 313);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'renameChannelWithoutToken')
+data.setCell(49, 2, 'testcases.RenameChannel')
+data.setCell(49, 3, 312);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'joinChannelWithNullValueToken')
+data.setCell(50, 2, 'testcases.JoinChannel')
+data.setCell(50, 3, 307);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'renameChannelWithoutChannelId')
+data.setCell(51, 2, 'testcases.RenameChannel')
+data.setCell(51, 3, 306);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'renameChannelWithNullValueToken')
+data.setCell(52, 2, 'testcases.RenameChannel')
+data.setCell(52, 3, 305);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.AddNewChannel</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addNewChannelSuccessfully</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNewChannelWithAlreadyRegisteredName</span>
+                <span class="method-start">2478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNewChannelWithBlankName</span>
+                <span class="method-start">4097 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNewChannelWithBlankToken</span>
+                <span class="method-start">4444 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNewChannelWithInvalidToken</span>
+                <span class="method-start">4772 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNewChannelWithNameCombinationUpperLowerCase</span>
+                <span class="method-start">5146 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNewChannelWithNameEqualTo80</span>
+                <span class="method-start">5471 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNewChannelWithNameInUpperCase</span>
+                <span class="method-start">6677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNewChannelWithNameMoreThan80</span>
+                <span class="method-start">6998 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNewChannelWithNullValueName</span>
+                <span class="method-start">7693 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNewChannelWithNullValueToken</span>
+                <span class="method-start">8110 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNewChannelWithSpecialCharacterName</span>
+                <span class="method-start">8455 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNewChannelWithoutName</span>
+                <span class="method-start">8822 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNewChannelWithoutToken</span>
+                <span class="method-start">9170 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.ArchiveChannel</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createChannel</span>
+                <span class="method-start">9495 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">archieveChannelInvalidIntValueChannelId</span>
+                <span class="method-start">10359 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">archieveChannelInvalidStringChannelId</span>
+                <span class="method-start">10694 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">archieveChannelWithBlankChannelId</span>
+                <span class="method-start">11103 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">archieveChannelWithNullValueChannelId</span>
+                <span class="method-start">11443 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">archieveChannelWithBlankToken</span>
+                <span class="method-start">11765 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">archieveChannelWithInvalidToken</span>
+                <span class="method-start">12102 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">archieveChannelWithNullValueToken</span>
+                <span class="method-start">12430 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">archieveChannelWithoutToken</span>
+                <span class="method-start">12757 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">archieveChannelSuccessfully</span>
+                <span class="method-start">13083 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">archieveChannelWithAlreadyarchieve</span>
+                <span class="method-start">13838 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.JoinChannel</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">joinChannelInvalidIntValueChannelId</span>
+                <span class="method-start">14154 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">joinChannelInvalidStringChannelId</span>
+                <span class="method-start">14489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">joinChannelWithBlankChannelId</span>
+                <span class="method-start">15486 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">joinChannelWithNullValueChannelId</span>
+                <span class="method-start">15803 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">joinChannelWithoutChannelId</span>
+                <span class="method-start">16138 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">joinChannelSuccessfully</span>
+                <span class="method-start">16504 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">joinChannelWithBlankToken</span>
+                <span class="method-start">17664 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">joinChannelWithInvalidToken</span>
+                <span class="method-start">18039 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">joinChannelWithNullValueToken</span>
+                <span class="method-start">18370 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">joinChannelWithoutToken</span>
+                <span class="method-start">18679 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.RenameChannel</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createChannel</span>
+                <span class="method-start">19451 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">renameChannelInvalidIntValueChannelId</span>
+                <span class="method-start">20305 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelInvalidStringValueChannelId</span>
+                <span class="method-start">20649 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelWithBlankChannelId</span>
+                <span class="method-start">20993 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelWithNullValueChannelId</span>
+                <span class="method-start">21418 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelWithoutChannelId</span>
+                <span class="method-start">21828 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelWithTheOriginalChannelName</span>
+                <span class="method-start">22136 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelSuccessfully</span>
+                <span class="method-start">22547 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelWithBlankToken</span>
+                <span class="method-start">23283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelWithInvalidToken</span>
+                <span class="method-start">23604 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelWithNullValueToken</span>
+                <span class="method-start">23921 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelWithoutToken</span>
+                <span class="method-start">24227 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelWithBlankRename</span>
+                <span class="method-start">24540 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelSpecialCharacterInRename</span>
+                <span class="method-start">24857 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelWithNulValueInRename</span>
+                <span class="method-start">25175 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelWithoutRename</span>
+                <span class="method-start">25738 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelWithUpperCaseInRename</span>
+                <span class="method-start">26093 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelWithUpperAndLowerCaseInRename</span>
+                <span class="method-start">26417 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelWithRenameMoreThan80</span>
+                <span class="method-start">26755 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">renameChannelWithRenameEqualTo80</span>
+                <span class="method-start">27131 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">deleteChannel</span>
+                <span class="method-start">27533 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

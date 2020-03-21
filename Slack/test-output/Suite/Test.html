@@ -1,0 +1,344 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>53/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Mar 21 19:09:51 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>27 seconds (27940 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.AddNewChannel.addNewChannelSuccessfully()'><b>addNewChannelSuccessfully</b><br>Test class: testcases.AddNewChannel</td>
+<td></td>
+<td>2</td>
+<td>testcases.AddNewChannel@1810399e</td></tr>
+<tr>
+<td title='testcases.AddNewChannel.addNewChannelWithAlreadyRegisteredName()'><b>addNewChannelWithAlreadyRegisteredName</b><br>Test class: testcases.AddNewChannel</td>
+<td></td>
+<td>1</td>
+<td>testcases.AddNewChannel@1810399e</td></tr>
+<tr>
+<td title='testcases.AddNewChannel.addNewChannelWithBlankName()'><b>addNewChannelWithBlankName</b><br>Test class: testcases.AddNewChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.AddNewChannel@1810399e</td></tr>
+<tr>
+<td title='testcases.AddNewChannel.addNewChannelWithBlankToken()'><b>addNewChannelWithBlankToken</b><br>Test class: testcases.AddNewChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.AddNewChannel@1810399e</td></tr>
+<tr>
+<td title='testcases.AddNewChannel.addNewChannelWithInvalidToken()'><b>addNewChannelWithInvalidToken</b><br>Test class: testcases.AddNewChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.AddNewChannel@1810399e</td></tr>
+<tr>
+<td title='testcases.AddNewChannel.addNewChannelWithNameCombinationUpperLowerCase()'><b>addNewChannelWithNameCombinationUpperLowerCase</b><br>Test class: testcases.AddNewChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.AddNewChannel@1810399e</td></tr>
+<tr>
+<td title='testcases.AddNewChannel.addNewChannelWithNameEqualTo80()'><b>addNewChannelWithNameEqualTo80</b><br>Test class: testcases.AddNewChannel</td>
+<td></td>
+<td>1</td>
+<td>testcases.AddNewChannel@1810399e</td></tr>
+<tr>
+<td title='testcases.AddNewChannel.addNewChannelWithNameInUpperCase()'><b>addNewChannelWithNameInUpperCase</b><br>Test class: testcases.AddNewChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.AddNewChannel@1810399e</td></tr>
+<tr>
+<td title='testcases.AddNewChannel.addNewChannelWithNameMoreThan80()'><b>addNewChannelWithNameMoreThan80</b><br>Test class: testcases.AddNewChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.AddNewChannel@1810399e</td></tr>
+<tr>
+<td title='testcases.AddNewChannel.addNewChannelWithNullValueName()'><b>addNewChannelWithNullValueName</b><br>Test class: testcases.AddNewChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.AddNewChannel@1810399e</td></tr>
+<tr>
+<td title='testcases.AddNewChannel.addNewChannelWithNullValueToken()'><b>addNewChannelWithNullValueToken</b><br>Test class: testcases.AddNewChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.AddNewChannel@1810399e</td></tr>
+<tr>
+<td title='testcases.AddNewChannel.addNewChannelWithSpecialCharacterName()'><b>addNewChannelWithSpecialCharacterName</b><br>Test class: testcases.AddNewChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.AddNewChannel@1810399e</td></tr>
+<tr>
+<td title='testcases.AddNewChannel.addNewChannelWithoutName()'><b>addNewChannelWithoutName</b><br>Test class: testcases.AddNewChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.AddNewChannel@1810399e</td></tr>
+<tr>
+<td title='testcases.AddNewChannel.addNewChannelWithoutToken()'><b>addNewChannelWithoutToken</b><br>Test class: testcases.AddNewChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.AddNewChannel@1810399e</td></tr>
+<tr>
+<td title='testcases.ArchiveChannel.archieveChannelInvalidIntValueChannelId()'><b>archieveChannelInvalidIntValueChannelId</b><br>Test class: testcases.ArchiveChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.ArchiveChannel@32d992b2</td></tr>
+<tr>
+<td title='testcases.ArchiveChannel.archieveChannelInvalidStringChannelId()'><b>archieveChannelInvalidStringChannelId</b><br>Test class: testcases.ArchiveChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.ArchiveChannel@32d992b2</td></tr>
+<tr>
+<td title='testcases.ArchiveChannel.archieveChannelSuccessfully()'><b>archieveChannelSuccessfully</b><br>Test class: testcases.ArchiveChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.ArchiveChannel@32d992b2</td></tr>
+<tr>
+<td title='testcases.ArchiveChannel.archieveChannelWithAlreadyarchieve()'><b>archieveChannelWithAlreadyarchieve</b><br>Test class: testcases.ArchiveChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.ArchiveChannel@32d992b2</td></tr>
+<tr>
+<td title='testcases.ArchiveChannel.archieveChannelWithBlankChannelId()'><b>archieveChannelWithBlankChannelId</b><br>Test class: testcases.ArchiveChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.ArchiveChannel@32d992b2</td></tr>
+<tr>
+<td title='testcases.ArchiveChannel.archieveChannelWithBlankToken()'><b>archieveChannelWithBlankToken</b><br>Test class: testcases.ArchiveChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.ArchiveChannel@32d992b2</td></tr>
+<tr>
+<td title='testcases.ArchiveChannel.archieveChannelWithInvalidToken()'><b>archieveChannelWithInvalidToken</b><br>Test class: testcases.ArchiveChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.ArchiveChannel@32d992b2</td></tr>
+<tr>
+<td title='testcases.ArchiveChannel.archieveChannelWithNullValueChannelId()'><b>archieveChannelWithNullValueChannelId</b><br>Test class: testcases.ArchiveChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.ArchiveChannel@32d992b2</td></tr>
+<tr>
+<td title='testcases.ArchiveChannel.archieveChannelWithNullValueToken()'><b>archieveChannelWithNullValueToken</b><br>Test class: testcases.ArchiveChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.ArchiveChannel@32d992b2</td></tr>
+<tr>
+<td title='testcases.ArchiveChannel.archieveChannelWithoutToken()'><b>archieveChannelWithoutToken</b><br>Test class: testcases.ArchiveChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.ArchiveChannel@32d992b2</td></tr>
+<tr>
+<td title='testcases.JoinChannel.joinChannelInvalidIntValueChannelId()'><b>joinChannelInvalidIntValueChannelId</b><br>Test class: testcases.JoinChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.JoinChannel@215be6bb</td></tr>
+<tr>
+<td title='testcases.JoinChannel.joinChannelInvalidStringChannelId()'><b>joinChannelInvalidStringChannelId</b><br>Test class: testcases.JoinChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.JoinChannel@215be6bb</td></tr>
+<tr>
+<td title='testcases.JoinChannel.joinChannelSuccessfully()'><b>joinChannelSuccessfully</b><br>Test class: testcases.JoinChannel</td>
+<td></td>
+<td>1</td>
+<td>testcases.JoinChannel@215be6bb</td></tr>
+<tr>
+<td title='testcases.JoinChannel.joinChannelWithBlankChannelId()'><b>joinChannelWithBlankChannelId</b><br>Test class: testcases.JoinChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.JoinChannel@215be6bb</td></tr>
+<tr>
+<td title='testcases.JoinChannel.joinChannelWithBlankToken()'><b>joinChannelWithBlankToken</b><br>Test class: testcases.JoinChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.JoinChannel@215be6bb</td></tr>
+<tr>
+<td title='testcases.JoinChannel.joinChannelWithInvalidToken()'><b>joinChannelWithInvalidToken</b><br>Test class: testcases.JoinChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.JoinChannel@215be6bb</td></tr>
+<tr>
+<td title='testcases.JoinChannel.joinChannelWithNullValueChannelId()'><b>joinChannelWithNullValueChannelId</b><br>Test class: testcases.JoinChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.JoinChannel@215be6bb</td></tr>
+<tr>
+<td title='testcases.JoinChannel.joinChannelWithNullValueToken()'><b>joinChannelWithNullValueToken</b><br>Test class: testcases.JoinChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.JoinChannel@215be6bb</td></tr>
+<tr>
+<td title='testcases.JoinChannel.joinChannelWithoutChannelId()'><b>joinChannelWithoutChannelId</b><br>Test class: testcases.JoinChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.JoinChannel@215be6bb</td></tr>
+<tr>
+<td title='testcases.JoinChannel.joinChannelWithoutToken()'><b>joinChannelWithoutToken</b><br>Test class: testcases.JoinChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.JoinChannel@215be6bb</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelInvalidIntValueChannelId()'><b>renameChannelInvalidIntValueChannelId</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelInvalidStringValueChannelId()'><b>renameChannelInvalidStringValueChannelId</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelSpecialCharacterInRename()'><b>renameChannelSpecialCharacterInRename</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelSuccessfully()'><b>renameChannelSuccessfully</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelWithBlankChannelId()'><b>renameChannelWithBlankChannelId</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelWithBlankRename()'><b>renameChannelWithBlankRename</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelWithBlankToken()'><b>renameChannelWithBlankToken</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelWithInvalidToken()'><b>renameChannelWithInvalidToken</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelWithNulValueInRename()'><b>renameChannelWithNulValueInRename</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelWithNullValueChannelId()'><b>renameChannelWithNullValueChannelId</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelWithNullValueToken()'><b>renameChannelWithNullValueToken</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelWithRenameEqualTo80()'><b>renameChannelWithRenameEqualTo80</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelWithRenameMoreThan80()'><b>renameChannelWithRenameMoreThan80</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelWithTheOriginalChannelName()'><b>renameChannelWithTheOriginalChannelName</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelWithUpperAndLowerCaseInRename()'><b>renameChannelWithUpperAndLowerCaseInRename</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelWithUpperCaseInRename()'><b>renameChannelWithUpperCaseInRename</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelWithoutChannelId()'><b>renameChannelWithoutChannelId</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelWithoutRename()'><b>renameChannelWithoutRename</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+<tr>
+<td title='testcases.RenameChannel.renameChannelWithoutToken()'><b>renameChannelWithoutToken</b><br>Test class: testcases.RenameChannel</td>
+<td></td>
+<td>0</td>
+<td>testcases.RenameChannel@4439f31e</td></tr>
+</table><p>
+</body>
+</html>
